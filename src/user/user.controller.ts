@@ -153,6 +153,9 @@ export class UserController {
       await this.userService.remove(id);
       return { message: 'The user has been successfully deleted.' };
     } catch (error) {
+      if (error instanceof NotFoundException) {
+        throw error;
+      }
       throw new InternalServerErrorException(
         'Internal server error. Please try again later.',
       );

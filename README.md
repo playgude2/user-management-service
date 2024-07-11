@@ -199,3 +199,19 @@ redis-server
 ```bash
 npm run start
 ```
+
+## API Documentation
+
+The application's Swagger API documentation will open on this link: [http://localhost:3000/api](http://localhost:3000/api)
+
+## Sample .env
+
+```dotenv
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_NAME=user_management_service
+REDIS_HOST=localhost
+REDIS_PORT=6379
+```

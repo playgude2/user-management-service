@@ -66,7 +66,7 @@ npm install
 
 ### Set up the database
 
-Configure your database connection in `ormconfig.json` for PostgreSQL or `app.module.ts` for MongoDB.
+Configure your database connection in `app.module.ts` for PostgreSQL.
 
 ### Install Redis
 
@@ -75,6 +75,10 @@ Follow the instructions to install Redis on your machine:
 - For macOS: `brew install redis`
 - For Ubuntu: `sudo apt-get install redis-server`
 - For Windows: [Download Redis](https://redis.io/download)
+- Using Docker:
+  ```bash
+  docker run --name redis -d -p 6379:6379 redis
+  ```
 
 ### Start Redis
 
@@ -179,7 +183,7 @@ npm install
 
 ### 2. Configure the database
 
-Update your database configuration in `ormconfig.json` or `app.module.ts`.
+Update your database configuration in `app.module.ts`.
 
 ### 3. Install and start Redis
 
@@ -187,6 +191,10 @@ Update your database configuration in `ormconfig.json` or `app.module.ts`.
   - macOS: `brew install redis`
   - Ubuntu: `sudo apt-get install redis-server`
   - Windows: [Download Redis](https://redis.io/download)
+  - Using Docker:
+    ```bash
+    docker run --name redis -d -p 6379:6379 redis
+    ```
 
 - Start Redis:
 
